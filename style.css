@@ -1,3 +1,10 @@
+/*
+COLOR PALETTE
+rgb(170, 6, 6) - red
+rgb(0, 0, 0) - black
+rgb(212, 175, 55) - gold
+*/
+
 .page {
   width: 80%;
   max-width: 960px;
@@ -56,19 +63,19 @@ th, td {
   color: white;
 }
 #countryResults th {
-  background-color: #f16059;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 .name-1 {
-  background-color: rgb(132,17,11);
+  background-color: rgb(170, 6, 6);
   color: white;
 }
 .name-2 {
-  background-color: rgb(245, 141, 136);
+  background-color: rgb(212, 175, 55);
   color: white;
 }
 .winner {
-  background-color: #f16059;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
