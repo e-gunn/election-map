@@ -1,5 +1,5 @@
 # Election Map
-Interactive U.S.A. presidential election map.
+Interactive election map with a twist on marathon running.
 
 ## Project Details
 
