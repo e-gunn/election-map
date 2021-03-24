@@ -18,8 +18,8 @@ return politician;
 
 };
 
-var shalane = createPolitician("Shalane Flanagan", [170, 6, 6]);
-var desiree = createPolitician("Desiree Linden", [212, 175, 55]);
+var shalane = createPolitician("Shalane Flanagan", [80, 191, 191]);
+var desiree = createPolitician("Desiree Linden", [174, 217, 82]);
 
 shalane.electionResults = [5, 1, 7, 2, 33, 6, 4, 2, 1, 14, 8, 3, 1, 11, 11, 0, 5, 3, 3, 3, 7, 4, 8, 9, 3, 7, 2, 2, 4, 2, 8, 3, 15, 15, 2, 12, 0, 4, 13, 1, 3, 2, 8, 21, 3, 2, 11, 1, 3, 10, 3];
 
@@ -50,7 +50,7 @@ var setStateResults = function(state) {
   if (stateWinner !== null) {
     theStates[state].rgbColor = stateWinner.partyColor;
   } else {
-    theStates[state].rgbColor = [0, 0, 0];
+    theStates[state].rgbColor = [107, 58, 140];
   }
 
 shalane.tallyUpTotalVotes();

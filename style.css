@@ -1,8 +1,9 @@
 /*
 COLOR PALETTE
-rgb(170, 6, 6) - red
-rgb(0, 0, 0) - black
-rgb(212, 175, 55) - gold
+#50BFBF - rgb(80, 191, 191) -blue
+#FFDA15 - rgb(255, 218, 21) -yellow
+#AED952 - rgb(174, 217, 82) -green
+#6B3A8C - rgb(107, 58, 140) - purple
 */
 
 .page {
@@ -15,7 +16,7 @@ rgb(212, 175, 55) - gold
 
 body {
   font: 16px/26px 'Open Sans', Helvetica, Arial, sans-serif;
-  color: #454545;
+  color: #6B3A8C;
   margin: 0px;
   padding: 0px;
   background-color: #eee;
@@ -67,23 +68,23 @@ th, td {
   padding: 8px;
 }
 #stateResults th{
-  background-color: #3b3b3b;
+  background-color: #6B3A8C;
   color: white;
 }
 #countryResults th {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 218, 21);
   color: white;
 }
 .name-1 {
-  background-color: rgb(170, 6, 6);
+  background-color: rgb(80, 191, 191);
   color: white;
 }
 .name-2 {
-  background-color: rgb(212, 175, 55);
+  background-color: rgb(174, 217, 82);
   color: white;
 }
 .winner {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 218, 21);
   color: white;
 }
 
