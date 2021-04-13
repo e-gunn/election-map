@@ -86,7 +86,7 @@ console.log("And the winner is... " + winner +"!");
 console.log("Shalane's color is: " + shalane.partyColor);
 console.log("Desiree's color is: " + desiree.partyColor);
 
-var countryInfoTable = document.getElementById("countryResults");
+var countryInfoTable = document.querySelector("#countryResults");
 var row = countryInfoTable.children[0].children[0];
 
 row.children[0].innerText = shalane.name;
@@ -95,7 +95,7 @@ row.children[2].innerText = desiree.name;
 row.children[3].innerText = desiree.totalVotes;
 row.children[5].innerText = winner;
 
-var stateInfoTable = document.getElementById("stateResults");
+var stateInfoTable = document.querySelector("#stateResults");
 var header = stateInfoTable.children[0];
 var body = stateInfoTable.children[1];
 var stateName = header.children[0].children[0];
