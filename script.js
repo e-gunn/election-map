@@ -1,6 +1,6 @@
-var createPolitician = function(name, partyColor) {
+const createPolitician = function(name, partyColor) {
 
-var politician = {};
+const politician = {};
 
 politician.name = name;
 politician.electionResults = null;
@@ -9,7 +9,7 @@ politician.partyColor = partyColor;
 
 politician.tallyUpTotalVotes = function() {
   this.totalVotes = 0;
-  for (var i = 0; i < this.electionResults.length; i++) {
+  for (let i = 0; i < this.electionResults.length; i++) {
     this.totalVotes = this.totalVotes + this.electionResults[i];
   }
 };
@@ -18,8 +18,8 @@ return politician;
 
 };
 
-var shalane = createPolitician("Shalane Flanagan", [80, 191, 191]);
-var desiree = createPolitician("Desiree Linden", [174, 217, 82]);
+const shalane = createPolitician("Shalane Flanagan", [80, 191, 191]);
+const desiree = createPolitician("Desiree Linden", [174, 217, 82]);
 
 shalane.electionResults = [
   5, 1, 7, 2, 33, 6, 4, 2, 1, 14,
@@ -49,7 +49,7 @@ desiree.electionResults[43] = 27;
 console.log(shalane.electionResults);
 console.log(desiree.electionResults);
 
-var setStateResults = function(state) {
+const setStateResults = function(state) {
   theStates[state].winner = null;
   if (shalane.electionResults[state] > desiree.electionResults[state]) {
     theStates[state].winner = shalane;
@@ -57,7 +57,7 @@ var setStateResults = function(state) {
     theStates[state].winner = desiree;
   }
 
-  var stateWinner = theStates[state].winner;
+  let stateWinner = theStates[state].winner;
 
   if (stateWinner !== null) {
     theStates[state].rgbColor = stateWinner.partyColor;
@@ -71,7 +71,7 @@ desiree.tallyUpTotalVotes();
 console.log(shalane.totalVotes);
 console.log(desiree.totalVotes);
 
-var winner = null;
+let winner = null;
 
   if (shalane.totalVotes > desiree.totalVotes) {
      winner = shalane.name;
@@ -86,8 +86,8 @@ console.log("And the winner is... " + winner +"!");
 console.log("Shalane's color is: " + shalane.partyColor);
 console.log("Desiree's color is: " + desiree.partyColor);
 
-var countryInfoTable = document.querySelector("#countryResults");
-var row = countryInfoTable.children[0].children[0];
+const countryInfoTable = document.querySelector("#countryResults");
+const row = countryInfoTable.children[0].children[0];
 
 row.children[0].innerText = shalane.name;
 row.children[1].innerText = shalane.totalVotes;
@@ -95,16 +95,16 @@ row.children[2].innerText = desiree.name;
 row.children[3].innerText = desiree.totalVotes;
 row.children[5].innerText = winner;
 
-var stateInfoTable = document.querySelector("#stateResults");
-var header = stateInfoTable.children[0];
-var body = stateInfoTable.children[1];
-var stateName = header.children[0].children[0];
-var abbrev = header.children[0].children[1];
-var candidate1Name = body.children[0].children[0];
-var candidate2Name = body.children[1].children[0];
-var candidate1Results = body.children[0].children[1];
-var candidate2Results = body.children[1].children[1];
-var winnersName = body.children[2].children[1];
+const stateInfoTable = document.querySelector("#stateResults");
+const header = stateInfoTable.children[0];
+const body = stateInfoTable.children[1];
+const stateName = header.children[0].children[0];
+const abbrev = header.children[0].children[1];
+const candidate1Name = body.children[0].children[0];
+const candidate2Name = body.children[1].children[0];
+const candidate1Results = body.children[0].children[1];
+const candidate2Results = body.children[1].children[1];
+const winnersName = body.children[2].children[1];
 
 stateName.innerText = theStates[state].nameFull;
 abbrev.innerText = "(" + theStates[state].nameAbbrev + ")";
