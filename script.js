@@ -1,16 +1,15 @@
 const createPolitician = function(name, partyColor) {
 
-const politician = {};
-
-politician.name = name;
-politician.electionResults = null;
-politician.totalResults = 0;
-politician.partyColor = partyColor;
-
-politician.tallyUpTotalVotes = function() {
-  this.totalVotes = 0;
-  for (let i = 0; i < this.electionResults.length; i++) {
-    this.totalVotes = this.totalVotes + this.electionResults[i];
+const politician = {
+  name: name,
+  electionResults: null,
+  totalResults: 0,
+  partyColor: partyColor,
+  tallyUpTotalVotes: function () {
+    this.totalVotes = 0;
+    for (let i = 0; i < this.electionResults.length; i++) {
+      this.totalVotes = this.totalVotes + this.electionResults[i];
+    }
   }
 };
 
